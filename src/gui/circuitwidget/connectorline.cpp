@@ -230,7 +230,7 @@ void ConnectorLine::remove()
 
 void ConnectorLine::mousePressEvent( QGraphicsSceneMouseEvent* event )
 {
-    if( event->button() == Qt::MidButton )                      // Move Line
+    if( event->button() == Qt::MouseButton::MiddleButton )                      // Move Line
     {
         event->accept();
 

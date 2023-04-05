@@ -170,7 +170,7 @@ bool EditorWindow::saveFile(const QString &fileName)
         return false;
     }
     QTextStream out(&file);
-    out.setCodec("UTF-8");
+    ////out.setCodec("UTF-8");
     QApplication::setOverrideCursor(Qt::WaitCursor);
     CodeEditor *ce = getCodeEditor();
     out << ce->toPlainText();
@@ -637,7 +637,7 @@ void EditorWindow::writeSettings()
 
 QString EditorWindow::strippedName(const QString &fullFileName)
 {
-    return QFileInfo(fullFileName).fileName();
+    return QFile(fullFileName).fileName();
 }
 
 #include "moc_editorwindow.cpp"

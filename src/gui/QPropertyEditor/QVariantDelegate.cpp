@@ -31,7 +31,8 @@
 #include "Property.h"
 
 #include <QAbstractItemView>
-#include <QtCore/QSignalMapper>
+#include <QSignalMapper>
+#include <QRegExp>
 //#include <QDebug>
 
 QVariantDelegate::QVariantDelegate(QObject* parent) : QItemDelegate(parent)
@@ -126,12 +127,12 @@ void QVariantDelegate::parseEditorHints(QWidget* editor, const QString& editorHi
         editor->blockSignals(true);
         // Parse for property values
         QRegExp rx("(.*)(=\\s*)(.*)(;{1})");
-        rx.setMinimal(true);
+        //rx.setMinimal(true);
         int pos = 0;
-        while ((pos = rx.indexIn(editorHints, pos)) != -1) 
+        while ((pos = rx.indexIn(editorHints)) != -1)
         {
             //qDebug("Setting %s to %s", qPrintable(rx.cap(1)), qPrintable(rx.cap(3)));
-            editor->setProperty(qPrintable(rx.cap(1).trimmed()), rx.cap(3).trimmed());                
+            editor->setProperty(qPrintable(rx.cap(1).trimmed()), rx.cap(3).trimmed());
             pos += rx.matchedLength();
         }
         editor->blockSignals(false);

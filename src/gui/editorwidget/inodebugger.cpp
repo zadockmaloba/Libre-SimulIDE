@@ -63,7 +63,7 @@ void InoDebugger::upload()
     
     if( circDir != "" )
     {
-        QDir circuitDir = QFileInfo( circDir ).absoluteDir();
+        QDir circuitDir = QFileInfo( circDir ).absolutePath();
         
         m_firmware = circuitDir.absolutePath()+"/"+m_fileName+".hex";
         //qDebug() <<"InoDebugger::upload"<<m_firmware<<firmPath;
@@ -112,7 +112,7 @@ int InoDebugger::compile()
           return -1;
     }
     QTextStream out(&file);
-    out.setCodec("UTF-8");
+    ////out.setCodec("UTF-8");
     
     QStringList inoLines = fileToStringList( filePath, "InoDebugger::compile" );
     QString line;

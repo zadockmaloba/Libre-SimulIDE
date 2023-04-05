@@ -32,7 +32,7 @@
 #include "EnumProperty.h"
 
 #include <QApplication>
-#include <QtCore/QMetaProperty>
+#include <QMetaProperty>
 #include <QItemEditorFactory>
 //#include <QDebug>
 

@@ -67,7 +67,7 @@ static uint ascii2uint64(char *buffer, int digits)
 
 static uint ascii2uint(char *buffer, int digits)
 {
-  uint long long i = ascii2uint64(buffer,digits);
+  uint  i = ascii2uint64(buffer,digits);
   return (uint) i;
 }
 

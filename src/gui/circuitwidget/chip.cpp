@@ -55,7 +55,7 @@ void Chip::initChip()
 
     m_error = 0;
 
-    QDir circuitDir = QFileInfo( Circuit::self()->getFileName() ).absoluteDir();
+    QDir circuitDir = QFileInfo( Circuit::self()->getFileName() ).absolutePath();
     QString fileNameAbs = circuitDir.absoluteFilePath( m_pkgeFile );
 
     QFile pfile( fileNameAbs );

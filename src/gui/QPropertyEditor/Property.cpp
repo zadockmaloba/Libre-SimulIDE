@@ -29,7 +29,7 @@
 #include "Property.h"
 #include "ColorCombo.h"
 
-#include <QtCore/QMetaProperty>
+#include <QMetaProperty>
 #include <QApplication>
 //#include <QDebug>
 

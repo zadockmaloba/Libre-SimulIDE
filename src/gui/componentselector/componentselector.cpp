@@ -212,7 +212,7 @@ void ComponentSelector::addItem( const QString &caption, const QString &_categor
         {
             catItem = new QTreeWidgetItem( this );
             catItem->setIcon( 0, QIcon(":/null-0.png") );
-            catItem->setTextColor( 0, QColor( 110, 95, 50 )/*QColor(255, 230, 200)*/ );
+            //catItem->setTextColor( 0, QColor( 110, 95, 50 )/*QColor(255, 230, 200)*/ );
             catItem->setBackground( 0, QBrush(QColor(240, 235, 245)) );
             expanded = true;
         }
@@ -221,7 +221,7 @@ void ComponentSelector::addItem( const QString &caption, const QString &_categor
         catItem->setFlags( QFlag(32) );
         QFont font = catItem->font(0);
         font.setPixelSize( 13*MainWindow::self()->fontScale() );
-        font.setWeight(75);
+        font.setWeight(QFont::Weight::Bold);
         catItem->setFont( 0, font );
         catItem->setText( 0, category );
         catItem->setChildIndicatorPolicy( QTreeWidgetItem::ShowIndicator );
@@ -420,7 +420,7 @@ void ComponentSelector::slotManageComponents()
                 QString destFile = origFile;
                 destFile = destFile.remove(dir+"/");
                 
-                QFileInfo fi( destFile );
+                QFile fi( destFile );
                 QDir destDir = fi.dir();
 
                 destDir.mkpath( destDir.absolutePath() );

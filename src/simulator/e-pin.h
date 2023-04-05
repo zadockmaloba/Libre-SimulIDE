@@ -20,7 +20,7 @@
 #ifndef EPIN_H
 #define EPIN_H
 
-// Have to use #include <QtCore/QtGlobal> for Q_DECL_EXPORT?
+// Have to use #include <QtGlobal> for Q_DECL_EXPORT?
 #include <string>
 
 class eNode;

@@ -19,7 +19,7 @@
 
 #include <qstringlist.h>
 #include <QDomDocument>
-#include <QFileInfo>
+#include <QFile>
 
 #include "mainwindow.h"
 #include "mcucomponent.h"
@@ -350,7 +350,7 @@ void McuComponent::slotReload()
 
 void McuComponent::load( QString fileName )
 {
-    QDir circuitDir = QFileInfo(Circuit::self()->getFileName()).absoluteDir();
+    QDir circuitDir = QFileInfo(Circuit::self()->getFileName()).absolutePath();
     QString fileNameAbs = circuitDir.absoluteFilePath(fileName);
     QString cleanPathAbs = circuitDir.cleanPath(fileNameAbs);
 
@@ -380,10 +380,10 @@ void McuComponent::setProgram( QString pro )
     if( pro == "" ) return;
     m_symbolFile = pro;
 
-    QDir circuitDir = QFileInfo(Circuit::self()->getFileName()).absoluteDir();
+    QDir circuitDir = QFileInfo(Circuit::self()->getFileName()).absolutePath();
     QString fileNameAbs = circuitDir.absoluteFilePath(m_symbolFile);
 
-    if( QFileInfo::exists( fileNameAbs )  // Load firmware at circuit load
+    if( QFile::exists( fileNameAbs )  // Load firmware at circuit load
      && !m_processor->getLoadStatus())
     {
         load( m_symbolFile );

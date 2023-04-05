@@ -24,7 +24,7 @@ TEMPLATE = app
 
 TARGET = simulide
 
-QT += core gui multimedia widgets serialport concurrent script xml svg
+QT += core gui multimedia widgets serialport concurrent qml xml svg core5compat
 
 win32-g++{
     OS = Windows
@@ -40,7 +40,7 @@ macx {
         /usr/local/Cellar/libelf/0.8.13_1/include \
         /usr/local/Cellar/libelf/0.8.13_1/include/libelf
     
-    LIBS += /usr/local/lib/libelf.a
+    LIBS += /usr/local/Cellar/libelf/0.8.13_1/lib/libelf.a
     QMAKE_LFLAGS += -no-pie
 }
 
@@ -64,7 +64,7 @@ QMAKE_CFLAGS += -O2
 QMAKE_CFLAGS -= -fPIC
 QMAKE_CFLAGS += -fno-pic
 
-QMAKE_LIBS += -lelf
+#QMAKE_LIBS += -lelf
 
 CONFIG += qt 
 CONFIG += warn_on
@@ -103,6 +103,8 @@ QMAKE_EXTRA_TARGETS += runLrelease
 POST_TARGETDEPS     += runLrelease
 
 RESOURCES = ./src/application.qrc
+
+# @Zadock TODO: Implement way to integrate libelf in the project
 
 win32 | linux {
     DESTDIR = $$TARGET_PREFIX/bin

@@ -58,7 +58,7 @@ class QSettings;
   *
   * In case a regular expression is used as the search term, the form also checks whether the
   * expression is a valid regular expression (You may want to take a look at the syntax of regular expressions:
-  * http://doc.trolltech.com/qregexp.html).
+  * http://doc.trolltech.com/QRegExp.html).
   *
   * The form provides also functionalities to save and restore its state using a QSettings object (i.e.,
   * the last word searched for, the options of the form, etc.) via the methods writeSettings()

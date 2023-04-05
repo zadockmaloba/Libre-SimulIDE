@@ -25,7 +25,7 @@
 #ifndef FINDREPLACE_GLOBAL_H
 #define FINDREPLACE_GLOBAL_H
 
-#include <QtCore/qglobal.h>
+#include <qglobal.h>
 #include "codeeditor.h"
 
 #if defined(FINDREPLACE_LIBRARY)

@@ -33,7 +33,7 @@ MainWindow *MainWindow::m_pSelf = 0l;
 
 MainWindow::MainWindow() :
     QMainWindow(),
-    m_settings(QStandardPaths::standardLocations(QStandardPaths::DataLocation)
+    m_settings(QStandardPaths::standardLocations(QStandardPaths::AppDataLocation)
                        .first() +
                    "/simulide.ini",
                QSettings::IniFormat, this)
@@ -59,7 +59,7 @@ MainWindow::MainWindow() :
         if (m_fontScale == 0)
             m_fontScale = 1;
     } else {
-        double dpiX = qApp->desktop()->logicalDpiX();
+        double dpiX = qApp->primaryScreen()->logicalDotsPerInchX();
         m_fontScale = dpiX / 96.0;
     }
     // qDebug()<<dpiX;
@@ -226,7 +226,7 @@ void MainWindow::loadCircHelp()
         if (file.open(QFile::ReadOnly | QFile::Text)) // Get Text from Help File
         {
             QTextStream s1(&file);
-            s1.setCodec("UTF-8");
+            //s1.setCodec("UTF-8");
 
             m_circHelp = "";
             m_circHelp.append(s1.readAll());

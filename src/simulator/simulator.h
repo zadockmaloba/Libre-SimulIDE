@@ -23,7 +23,9 @@
 #include "circmatrix.h"
 
 #include <QElapsedTimer>
-#include <qtconcurrentrun.h>
+#include <QThread>
+#include <QtConcurrent>
+#include <QtConcurrentRun>
 
 class BaseProcessor;
 class eElement;

@@ -25,13 +25,13 @@
 #ifndef UI_FINDREPLACEDIALOG_H
 #define UI_FINDREPLACEDIALOG_H
 
-#include <QtCore/QVariant>
-#include <QtWidgets/QAction>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QDialog>
-#include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHeaderView>
+#include <QVariant>
+#include <QAction>
+#include <QApplication>
+#include <QButtonGroup>
+#include <QDialog>
+#include <QGridLayout>
+#include <QHeaderView>
 #include <findreplaceform.h>
 
 QT_BEGIN_NAMESPACE

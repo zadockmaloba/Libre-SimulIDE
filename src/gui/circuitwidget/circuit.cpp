@@ -524,7 +524,7 @@ bool Circuit::saveDom( QString &fileName, QDomDocument* doc )
         return false;
     }
     QTextStream out(&file);
-    out.setCodec("UTF-8");
+    ////out.setCodec("UTF-8");
     out << doc->toString();
     file.close();
 
@@ -824,7 +824,7 @@ void Circuit::saveChanges()
 
     m_backupPath = m_filePath;
 
-    QFileInfo bckDir( m_backupPath );
+    QFile bckDir( m_backupPath );
 
     if( !bckDir.isWritable() )
         m_backupPath = SIMUAPI_AppPath::self()->RWDataFolder().absolutePath()+"/_backup.simu";
@@ -1094,7 +1094,7 @@ void Circuit::convertSubCircs() // Convert old subcircuits:
               continue;
         }
         QTextStream out(&fileS);
-        out.setCodec("UTF-8");
+        ////out.setCodec("UTF-8");
         out << text;
         fileS.close();
 
@@ -1324,7 +1324,7 @@ void Circuit::createSubcircuit()
           tr("Cannot write file %1:\n%2.").arg(fileName).arg(file.errorString()));
     }
     QTextStream out( &file );
-    out.setCodec("UTF-8");
+    ////out.setCodec("UTF-8");
     out << subcircuit;
     file.close();
     //qDebug() <<"Circuit::createSubcircuit\n" << subcircuit;
@@ -1365,9 +1365,9 @@ void Circuit::bom()
     bom.sort();
 
     QTextStream out(&file);
-    out.setCodec("UTF-8");
+    ////out.setCodec("UTF-8");
     out <<  "\nCircuit: ";
-    out <<  QFileInfo( m_filePath ).fileName();
+    out <<  QFile( m_filePath ).fileName();
     out <<  "\n\n";
     out <<  "Bill of Materials:\n\n";
     for( QString line : bom ) out << line;
@@ -1395,7 +1395,7 @@ void Circuit::mousePressEvent( QGraphicsSceneMouseEvent* event )
         if( m_con_started ) event->accept();
         else                QGraphicsScene::mousePressEvent( event );
     }
-    else if( event->button() == Qt::MidButton )
+    else if( event->button() == Qt::MouseButton::MiddleButton )
     {
         QGraphicsScene::mousePressEvent( event );
     }

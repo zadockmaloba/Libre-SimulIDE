@@ -21,7 +21,7 @@
 #define COMPPLUGINDIALOG_H
 
 #include <QDialog>
-#include <QtWidgets/QListWidget>
+#include <QListWidget>
 #include <QTreeWidgetItem>
 
 namespace Ui {

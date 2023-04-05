@@ -98,7 +98,7 @@ void Image::setBackground( QString bck )
 {
     if( bck.isEmpty() ) return;
 
-    QDir circuitDir = QFileInfo( Circuit::self()->getFileName() ).absoluteDir();
+    QDir circuitDir = QFileInfo( Circuit::self()->getFileName() ).absolutePath();
     QString absPath = circuitDir.absoluteFilePath( bck );
 
     if( bck.endsWith(".gif") )
@@ -135,7 +135,7 @@ void Image::setBackground( QString bck )
 
 QString Image::background()
 {
-    QDir circuitDir = QFileInfo( Circuit::self()->getFileName() ).absoluteDir();
+    QDir circuitDir = QFileInfo( Circuit::self()->getFileName() ).absolutePath();
 
     return circuitDir.relativeFilePath( m_BackGround );
 }

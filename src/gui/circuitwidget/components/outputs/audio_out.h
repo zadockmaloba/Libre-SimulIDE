@@ -24,6 +24,7 @@
 #include "e-resistor.h"
 
 #include <QIODevice>  
+#include <QAudioDevice>
 #include <QAudioOutput>  
 
 class AudioOut : public Component, public eResistor
@@ -54,8 +55,8 @@ class AudioOut : public Component, public eResistor
         void OnAudioNotify();
         
     private:
-        QAudioDeviceInfo m_deviceinfo;
-        QAudioFormat     m_format;  
+        QAudioDevice m_deviceinfo;
+        QAudioFormat m_format;
         
         QAudioOutput*    m_audioOutput;
         QIODevice*       m_auIObuffer;

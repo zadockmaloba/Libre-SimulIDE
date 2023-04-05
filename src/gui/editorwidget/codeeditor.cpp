@@ -21,6 +21,7 @@
 #include <QThread>
 #include <QtAlgorithms>
 #include <QRegExp>
+#include <QRegularExpression>
 
 #include "utils.h"
 #include "codeeditor.h"
@@ -237,7 +238,7 @@ int CodeEditor::getSintaxCoincidences( QString& fileName, QStringList& instructi
         
         for( QString instruction : instructions )
         {
-            if( line.contains( QRegExp( "\\b"+instruction+"\\b" ) ))
+            if( line.contains( QRegularExpression( "\\b"+instruction+"\\b" ) ))
                 coincidences++;
             
             if( coincidences > 50 ) break;
@@ -624,7 +625,9 @@ int CodeEditor::lineNumberAreaWidth()
     int digits = 1;
     int max = qMax( 1, blockCount() );
     while( max >= 10 ) { max /= 10; ++digits; }
-    return  fontMetrics().height() + fontMetrics().width( QLatin1Char( '9' ) ) * digits;
+    return  fontMetrics().height() +
+            fontMetrics().size(Qt::TextSingleLine, QChar( '9' ) ).width() *
+            digits;
 }
 
 void CodeEditor::updateLineNumberAreaWidth( int /* newBlockCount */ )
@@ -744,7 +747,7 @@ int CodeEditor::tabSize()
 void CodeEditor::setTabSize( int size )
 {
     m_tabSize = size;
-    setTabStopWidth( m_tabSize*m_fontSize*2/3 );
+    //setTabStopWidth( m_tabSize*m_fontSize*2/3 );
     
     MainWindow::self()->settings()->setValue( "Editor_tab_size", QString::number(m_tabSize) );
     

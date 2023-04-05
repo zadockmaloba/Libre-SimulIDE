@@ -48,7 +48,7 @@ inline QString addQuotes( const QString &string )
 
 inline QString strippedName( const QString &fullFileName )
 {
-    return QFileInfo(fullFileName).fileName();
+    return QFile(fullFileName).fileName();
 }
 
 inline QString fileToString( const QString &fileName, const QString &caller )
@@ -60,7 +60,7 @@ inline QString fileToString( const QString &fileName, const QString &caller )
         return "";
     }
     QTextStream in(&file);
-    in.setCodec("UTF-8");
+    //in.setCodec("UTF-8");
     QString text = in.readAll();
     file.close();
 
@@ -78,7 +78,7 @@ inline QStringList fileToStringList( const QString &fileName, const QString &cal
         return text;
     }
     QTextStream in(&file);
-    in.setCodec("UTF-8");
+    //in.setCodec("UTF-8");
     while( !in.atEnd() ) text.append( in.readLine() );
     file.close();
 

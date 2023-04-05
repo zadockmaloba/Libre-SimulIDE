@@ -22,6 +22,7 @@
 #include "connector.h"
 #include "itemlibrary.h"
 #include "pin.h"
+#include <QMediaDevices>
 
 static const char* AudioOut_properties[] = {
     QT_TRANSLATE_NOOP("App::Property","Impedance"),
@@ -78,7 +79,7 @@ AudioOut::AudioOut( QObject* parent, QString type, QString id )
     int refreshPeriod = 10; // mS
     int sampleRate    = 40000; // samples/S
     
-    m_deviceinfo = QAudioDeviceInfo::defaultOutputDevice(); 
+    m_deviceinfo = QMediaDevices::defaultAudioOutput();
     if( m_deviceinfo.isNull() ) 
     {
         qDebug() <<"No defaulf Audio Output Device Found" ;
@@ -86,24 +87,24 @@ AudioOut::AudioOut( QObject* parent, QString type, QString id )
     }
     m_format.setSampleRate( sampleRate );  
     m_format.setChannelCount(1);
-    m_format.setSampleSize(8);
-    m_format.setCodec( "audio/pcm" );  
-    m_format.setByteOrder( QAudioFormat::LittleEndian );  
-    m_format.setSampleType( QAudioFormat::UnSignedInt );  
+    m_format.setSampleFormat(QAudioFormat::UInt8);
+    //m_format.setCodec( "audio/pcm" );
+    //m_format.setByteOrder( QAudioFormat::LittleEndian );
+    //m_format.setSampleType( QAudioFormat::UnSignedInt );
     
     if( !m_deviceinfo.isFormatSupported( m_format )) 
     {  
         qDebug() << "Default format not supported - trying to use nearest";  
-        m_format = m_deviceinfo.nearestFormat( m_format );  
+        m_format = m_deviceinfo.preferredFormat();
         
-        qDebug() << m_format.sampleRate() << m_format.channelCount()<<m_format.sampleSize();
+        qDebug() << m_format.sampleRate() << m_format.channelCount()<<m_format.sampleFormat();
     }  
-    m_audioOutput = new QAudioOutput( m_deviceinfo, m_format );   
+    m_audioOutput = new QAudioOutput( m_deviceinfo );
     
     m_dataSize = 2*refreshPeriod*sampleRate/1000;
     
     m_dataBuffer = new char[ m_dataSize ];
-    m_audioOutput->setBufferSize( 2*m_dataSize );
+    //m_audioOutput->setBufferSize( 2*m_dataSize );
 
     //qDebug() << "AudioOut::AudioOut" << m_audioOutput->notifyInterval();
     
@@ -137,7 +138,8 @@ void AudioOut::resetState()
     m_counter = 0;
     m_dataCount = 0;
     
-    m_auIObuffer = m_audioOutput->start();
+    //TODO: Implement QAudioSink
+    //m_auIObuffer = m_audioOutput->start();
 }
 
 void AudioOut::simuClockStep()

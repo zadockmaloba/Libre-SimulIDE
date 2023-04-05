@@ -21,6 +21,8 @@
 #define OUTPANELTEXT_H
 
 #include <QPlainTextEdit>
+#include <QRegExp>
+#include <QRegExp>
 #include <QSyntaxHighlighter>
 #include <QObject>
 

@@ -23,6 +23,8 @@
 
 #include <QSyntaxHighlighter>
 //#include <QHash>
+#include <QRegExp>
+#include <QRegExp>
 #include <QTextCharFormat>
 
 QT_BEGIN_NAMESPACE

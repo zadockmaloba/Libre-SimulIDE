@@ -20,14 +20,14 @@
 #ifndef UI_COMPPLUGIN_H
 #define UI_COMPPLUGIN_H
 
-#include <QtCore/QVariant>
-#include <QtWidgets/QAction>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QDialog>
-#include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QListWidget>
+#include <QVariant>
+#include <QAction>
+#include <QApplication>
+#include <QButtonGroup>
+#include <QDialog>
+#include <QGridLayout>
+#include <QHeaderView>
+#include <QListWidget>
 
 QT_BEGIN_NAMESPACE
 

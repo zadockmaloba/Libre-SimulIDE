@@ -29,8 +29,8 @@
 #ifndef QPROPERTYMODEL_H_
 #define QPROPERTYMODEL_H_
 
-#include <QtCore/QAbstractItemModel>
-#include <QtCore/QMap>
+#include <QAbstractItemModel>
+#include <QMap>
 
 #include "QPropertyEditorWidget.h"
 

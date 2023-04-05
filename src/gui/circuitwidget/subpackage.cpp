@@ -145,23 +145,23 @@ void SubPackage::mousePressEvent( QGraphicsSceneMouseEvent* event )
         if( m_angle == 0 )
         {
             m_rigPin.append( pin );
-            qSort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
+            std::sort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
             //for( Pin* pin : m_rigPin ) qDebug() << pin->pinId();
         }
         else if( m_angle == 90 )
         {
             m_topPin.append( pin );
-            qSort( m_topPin.begin(), m_topPin.end(), lessPinX );
+            std::sort( m_topPin.begin(), m_topPin.end(), lessPinX );
         }
         else if( m_angle == 180 )
         {
             m_lefPin.append( pin );
-            qSort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
+            std::sort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
         }
         else if( m_angle == 270 )
         {
             m_botPin.append( pin );
-            qSort( m_botPin.begin(), m_botPin.end(), lessPinX );
+            std::sort( m_botPin.begin(), m_botPin.end(), lessPinX );
         }
         m_eventPin = pin;
         editPin();
@@ -173,10 +173,10 @@ void SubPackage::mousePressEvent( QGraphicsSceneMouseEvent* event )
         ungrabMouse();
         setCursor( Qt::OpenHandCursor );
         
-        if     ( m_angle == 0 )   qSort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
-        else if( m_angle == 90 )  qSort( m_topPin.begin(), m_topPin.end(), lessPinX );
-        else if( m_angle == 180 ) qSort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
-        else if( m_angle == 270 ) qSort( m_botPin.begin(), m_botPin.end(), lessPinX );
+        if     ( m_angle == 0 )   std::sort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
+        else if( m_angle == 90 )  std::sort( m_topPin.begin(), m_topPin.end(), lessPinX );
+        else if( m_angle == 180 ) std::sort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
+        else if( m_angle == 270 ) std::sort( m_botPin.begin(), m_botPin.end(), lessPinX );
         
         m_changed = true;
         m_movePin = false;
@@ -456,22 +456,22 @@ void SubPackage::deletePin()
     if( angle == 0 )   
     {
         m_rigPin.removeOne( m_eventPin );
-        qSort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
+        std::sort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
     }
     else if( angle == 90 )  
     {
         m_topPin.removeOne( m_eventPin );
-        qSort( m_topPin.begin(), m_topPin.end(), lessPinX );
+        std::sort( m_topPin.begin(), m_topPin.end(), lessPinX );
     }
     else if( angle == 180 ) 
     {
         m_lefPin.removeOne( m_eventPin );
-        qSort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
+        std::sort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
     }
     else if( angle == 270 ) 
     {
         m_botPin.removeOne( m_eventPin );
-        qSort( m_botPin.begin(), m_botPin.end(), lessPinX );
+        std::sort( m_botPin.begin(), m_botPin.end(), lessPinX );
     }
        
     if( m_eventPin->isConnected() ) m_eventPin->connector()->remove();
@@ -565,7 +565,7 @@ void SubPackage::setLogicSymbol( bool ls )
 
 void SubPackage::slotSave()
 {
-    QDir pdir = QFileInfo( Circuit::self()->getFileName() ).absoluteDir();
+    QDir pdir = QFileInfo( Circuit::self()->getFileName() ).absolutePath();
     QString pkgeFile = pdir.absoluteFilePath( m_pkgeFile );
 
     //qDebug() << "SubPackage::slotSave"<<pkgeFile;
@@ -603,7 +603,7 @@ QString SubPackage::pinEntry( Pin* pin, int pP, QString side )
 
 void SubPackage::loadPackage()
 {
-    QDir pkgDir = QFileInfo( Circuit::self()->getFileName() ).absoluteDir();
+    QDir pkgDir = QFileInfo( Circuit::self()->getFileName() ).absolutePath();
     QString dir = pkgDir.absoluteFilePath( m_pkgeFile );
     
     QString fileName = QFileDialog::getOpenFileName( 0l, tr("Load Package File"), dir,
@@ -613,12 +613,12 @@ void SubPackage::loadPackage()
 
     setPackage( fileName );
 
-    qSort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
-    qSort( m_topPin.begin(), m_topPin.end(), lessPinX );
-    qSort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
-    qSort( m_botPin.begin(), m_botPin.end(), lessPinX );
+    std::sort( m_rigPin.begin(), m_rigPin.end(), lessPinY );
+    std::sort( m_topPin.begin(), m_topPin.end(), lessPinX );
+    std::sort( m_lefPin.begin(), m_lefPin.end(), lessPinY );
+    std::sort( m_botPin.begin(), m_botPin.end(), lessPinX );
 
-    QDir pdir = QFileInfo( Circuit::self()->getFileName() ).absoluteDir();
+    QDir pdir = QFileInfo( Circuit::self()->getFileName() ).absolutePath();
     m_pkgeFile = pdir.relativeFilePath( fileName );
     m_lastPkg = fileName;
 
@@ -640,7 +640,7 @@ void SubPackage::savePackage( QString fileName )
           return;
     }
     QTextStream out(&file);
-    out.setCodec("UTF-8");
+    ////out.setCodec("UTF-8");
 
     QApplication::setOverrideCursor(Qt::WaitCursor);
     
@@ -681,7 +681,7 @@ void SubPackage::savePackage( QString fileName )
     file.close();
     QApplication::restoreOverrideCursor();
 
-    QDir dir = QFileInfo( Circuit::self()->getFileName() ).absoluteDir();
+    QDir dir = QFileInfo( Circuit::self()->getFileName() ).absolutePath();
 
     m_pkgeFile = dir.relativeFilePath( fileName );
     m_lastPkg = fileName;

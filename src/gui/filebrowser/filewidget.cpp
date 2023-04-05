@@ -111,7 +111,7 @@ void FileWidget::addEntry( QString name, QString path )
     
     QFont font;
     font.setPixelSize( 11*MainWindow::self()->fontScale() );
-    font.setWeight(70);
+    font.setWeight(QFont::Weight::Bold);
     item->setFont( font );
     item->setIcon( QIcon(":/open.png") );
     

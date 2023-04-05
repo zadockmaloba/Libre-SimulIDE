@@ -29,10 +29,10 @@
 #ifndef __ENUMPROPERTY_H__
 #define __ENUMPROPERTY_H__
 
-#include <QtCore/QStringList>
-#include <QtCore/QMetaObject>
-#include <QtCore/QMetaEnum>
-#include <QtCore/QMetaProperty>
+#include <QStringList>
+#include <QMetaObject>
+#include <QMetaEnum>
+#include <QMetaProperty>
 #include <QComboBox>
 #include "Property.h"
 

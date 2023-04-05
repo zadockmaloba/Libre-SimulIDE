@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
     //QApplication::setGraphicsSystem( "raster" );//native, raster, opengl
     QApplication app( argc, argv );
 
-    QSettings settings( QStandardPaths::standardLocations( QStandardPaths::DataLocation).first()+"/simulide.ini",  QSettings::IniFormat, 0l );
+    QSettings settings( QStandardPaths::standardLocations( QStandardPaths::AppDataLocation).first()+"/simulide.ini",  QSettings::IniFormat, 0l );
 
     QString locale = QLocale::system().name();
     if( settings.contains( "language" ) ) locale = settings.value( "language" ).toString();

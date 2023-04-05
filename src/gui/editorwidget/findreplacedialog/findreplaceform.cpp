@@ -25,6 +25,7 @@
 #include <QtGui>
 #include <QRegExp>
 #include <QSettings>
+#include <QRegularExpression>
 
 #include "findreplaceform.h"
 #include "ui_findreplaceform.h"
@@ -160,7 +161,9 @@ void FindReplaceForm::find( bool next )
     if (ui->wholeCheckBox->isChecked()) flags |= QTextDocument::FindWholeWords;
     if (ui->regexCheckBox->isChecked()) 
     {
-        QRegExp reg(toSearch, (ui->caseCheckBox->isChecked() ? Qt::CaseSensitive : Qt::CaseInsensitive));
+        QRegularExpression reg(toSearch, (ui->caseCheckBox->isChecked() ?
+                                              QRegularExpression::CaseInsensitiveOption
+                                            : QRegularExpression::NoPatternOption));
 
         //qDebug() << "searching for regexp: " << reg.pattern();
 

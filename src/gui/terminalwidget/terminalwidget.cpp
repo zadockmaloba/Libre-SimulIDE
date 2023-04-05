@@ -248,7 +248,7 @@ void TerminalWidget::uartIn( int uart, int value ) // Receive one byte on Uart
     if( m_printASCII )
     {
         if( value == 0 ) return;
-        text.append( value );
+        text.append( QChar(value) );
     }
     else text = QString::number( value )+" ";
 
@@ -264,7 +264,7 @@ void TerminalWidget::uartOut( int uart, int value ) // Send value to OutPanelTex
     if( m_printASCII )
     {
         //if( value == 0 ) return;
-        text.append( value );
+        text.append( QChar(value) );
     }
     else text = QString::number( value )+" ";
 
