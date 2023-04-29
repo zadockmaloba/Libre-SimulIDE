@@ -25,7 +25,7 @@
 
 class eNode;
 
-class MAINMODULE_EXPORT ePin
+class  ePin
 {
   public:
     ePin(std::string id, int index);

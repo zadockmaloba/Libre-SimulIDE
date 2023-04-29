@@ -22,7 +22,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eGate : public eLogicDevice
+class  eGate : public eLogicDevice
 {
     public:
 

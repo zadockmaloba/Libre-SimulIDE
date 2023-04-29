@@ -24,7 +24,7 @@
 
 class eSource;
 
-class MAINMODULE_EXPORT eClock : public eElement
+class  eClock : public eElement
 {
     public:
         eClock( std::string id );

@@ -22,7 +22,7 @@
 
 #include "e-resistor.h"
 
-class MAINMODULE_EXPORT eCapacitor : public eResistor
+class  eCapacitor : public eResistor
 {
     public:
         eCapacitor( std::string id );

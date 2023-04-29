@@ -29,7 +29,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT OpAmp : public Component, public eOpAmp
+class  OpAmp : public Component, public eOpAmp
 {
     Q_OBJECT
     Q_PROPERTY( double Gain       READ gain          WRITE setGain      DESIGNABLE true USER true )

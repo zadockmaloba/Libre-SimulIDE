@@ -24,7 +24,7 @@
 
 class eSource;
 
-class MAINMODULE_EXPORT eOpAmp : public eElement
+class  eOpAmp : public eElement
 {
     public:
 

@@ -22,7 +22,7 @@
 
 #include "e-resistor.h"
 
-class MAINMODULE_EXPORT eResistorDip : public eElement
+class  eResistorDip : public eElement
 {
     public:
         eResistorDip( std::string id );

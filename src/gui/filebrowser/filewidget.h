@@ -22,7 +22,7 @@
 
 #include "filebrowser.h"
 
-class MAINMODULE_EXPORT FileWidget : public QWidget
+class  FileWidget : public QWidget
 {
     Q_OBJECT
     

@@ -25,7 +25,7 @@
 #include "e-source.h"
 #include "pin.h"
 
-class MAINMODULE_EXPORT Ks0108 : public Component, public eElement
+class  Ks0108 : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( bool CS_Active_Low   READ csActLow    WRITE setCsActLow   DESIGNABLE true USER true )

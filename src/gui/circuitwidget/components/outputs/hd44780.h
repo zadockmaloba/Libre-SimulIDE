@@ -25,7 +25,7 @@
 #include "e-element.h"
 #include "pin.h"
 
-class MAINMODULE_EXPORT Hd44780 : public Component, public eElement
+class  Hd44780 : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( int Cols   READ cols    WRITE setCols   DESIGNABLE true USER true )

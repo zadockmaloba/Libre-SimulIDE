@@ -5,7 +5,7 @@
 #include "component.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT TextComponent : public Component
+class  TextComponent : public Component
 {
     Q_OBJECT
     Q_PROPERTY( QString  Text  READ getText    WRITE setText )

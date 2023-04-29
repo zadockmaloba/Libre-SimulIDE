@@ -28,7 +28,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT Potentiometer : public Component, public eElement
+class  Potentiometer : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( double  Resistance READ res     WRITE setRes    DESIGNABLE true USER true )

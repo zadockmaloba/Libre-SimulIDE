@@ -25,7 +25,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT Buffer : public Gate
+class  Buffer : public Gate
 {
     Q_OBJECT
     Q_PROPERTY( bool Tristate READ tristate WRITE setTristate DESIGNABLE true USER true )

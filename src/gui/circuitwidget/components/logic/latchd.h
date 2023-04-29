@@ -24,7 +24,7 @@
 #include "itemlibrary.h"
 #include "logiccomponent.h"
 
-class MAINMODULE_EXPORT LatchD : public LogicComponent, public eLatchD
+class  LatchD : public LogicComponent, public eLatchD
 {
     Q_OBJECT
     Q_PROPERTY( double Input_High_V READ inputHighV WRITE setInputHighV DESIGNABLE true USER true )

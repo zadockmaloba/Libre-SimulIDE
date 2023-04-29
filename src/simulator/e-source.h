@@ -23,7 +23,7 @@
 #include "e-element.h"
 #include "e-node.h"
 
-class MAINMODULE_EXPORT eSource : public eElement
+class  eSource : public eElement
 {
   public:
     eSource(std::string id, ePin *epin);

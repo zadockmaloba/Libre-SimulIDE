@@ -22,7 +22,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eLatchD : public eLogicDevice
+class  eLatchD : public eLogicDevice
 {
     public:
 

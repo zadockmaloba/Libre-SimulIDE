@@ -25,7 +25,7 @@
 //class QStringList;
 class LibraryItem;
 
-class MAINMODULE_EXPORT ItemLibrary
+class  ItemLibrary
 {
     Q_DECLARE_TR_FUNCTIONS( ItemLibrary )
     
@@ -67,7 +67,7 @@ class MAINMODULE_EXPORT ItemLibrary
 };
 
 
-class MAINMODULE_EXPORT LibraryItem
+class  LibraryItem
 {
     public:
         LibraryItem( const QString &name, const QString &category, const QString &iconName,

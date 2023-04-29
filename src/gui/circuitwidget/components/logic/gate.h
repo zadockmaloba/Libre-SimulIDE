@@ -24,7 +24,7 @@
 #include "component.h"
 #include "pin.h"
 
-class MAINMODULE_EXPORT Gate : public Component, public eGate
+class  Gate : public Component, public eGate
 {
     Q_OBJECT
     //Q_PROPERTY( int    Num_Inputs   READ numInps    WRITE setNumInps    DESIGNABLE true USER true )

@@ -23,7 +23,7 @@
 #include "e-element.h"
 #include "e-pin.h"
 
-class MAINMODULE_EXPORT eNode
+class  eNode
 {
   public:
     eNode(QString id);

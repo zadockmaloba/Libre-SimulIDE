@@ -25,7 +25,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT ADC : public LogicComponent, public eADC
+class  ADC : public LogicComponent, public eADC
 {
     Q_OBJECT
     Q_PROPERTY( double Out_High_V  READ outHighV   WRITE setOutHighV   DESIGNABLE true USER true )

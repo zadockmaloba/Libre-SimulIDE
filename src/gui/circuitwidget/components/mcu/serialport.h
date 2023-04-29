@@ -26,7 +26,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT SerialPort : public Component, public eElement
+class  SerialPort : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( bool     Auto_Open     READ autoOpen  WRITE setAutoOpen  DESIGNABLE true  USER true )

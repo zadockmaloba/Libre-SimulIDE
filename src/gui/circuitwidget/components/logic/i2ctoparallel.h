@@ -24,7 +24,7 @@
 #include "itemlibrary.h"
 #include "logiccomponent.h"
 
-class MAINMODULE_EXPORT I2CToParallel : public LogicComponent, public eI2C
+class  I2CToParallel : public LogicComponent, public eI2C
 {
     Q_OBJECT
     Q_PROPERTY( int Control_Code READ cCode WRITE setCcode DESIGNABLE true USER true )

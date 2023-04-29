@@ -26,7 +26,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT SerialTerm : public Component, public eElement
+class  SerialTerm : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( int Mcu_Uart READ uart  WRITE setUart )

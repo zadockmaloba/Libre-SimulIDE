@@ -22,7 +22,7 @@
 
 #include "mech_contact.h"
 
-class MAINMODULE_EXPORT SwitchBase : public MechContact
+class  SwitchBase : public MechContact
 {
     Q_OBJECT
     Q_PROPERTY( QString Key READ key WRITE setKey DESIGNABLE true USER true )

@@ -25,7 +25,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT BJT : public Component, public eBJT
+class  BJT : public Component, public eBJT
 {
     Q_OBJECT
     Q_PROPERTY( double Gain      READ gain  WRITE setGain  DESIGNABLE true USER true )

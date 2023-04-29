@@ -26,7 +26,7 @@
 #include "e-resistor.h"
 #include "pin.h"
 
-class MAINMODULE_EXPORT Stepper : public Component, public eElement
+class  Stepper : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( int     Steps      READ steps WRITE setSteps DESIGNABLE true USER true )

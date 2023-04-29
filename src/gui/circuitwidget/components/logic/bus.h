@@ -24,7 +24,7 @@
 #include "component.h"
 #include "e-bus.h"
 
-class MAINMODULE_EXPORT Bus : public Component, public eBus
+class  Bus : public Component, public eBus
 {
     Q_OBJECT
     Q_PROPERTY( int Num_Bits  READ numLines    WRITE setNumLines    DESIGNABLE true USER true )

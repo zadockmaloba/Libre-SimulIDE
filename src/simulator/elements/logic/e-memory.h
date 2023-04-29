@@ -24,7 +24,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eMemory : public eLogicDevice
+class  eMemory : public eLogicDevice
 {
     public:
         eMemory( std::string id );

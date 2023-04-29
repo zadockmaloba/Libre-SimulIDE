@@ -25,7 +25,7 @@
 #include "compplugindialog.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT ComponentSelector : public QTreeWidget
+class  ComponentSelector : public QTreeWidget
 {
     Q_OBJECT
     

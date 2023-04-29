@@ -25,7 +25,7 @@
 #include "component.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT SR04 : public Component, public eElement
+class  SR04 : public Component, public eElement
 {
     Q_OBJECT
     

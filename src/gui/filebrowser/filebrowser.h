@@ -22,7 +22,7 @@
 
 #include <QtWidgets>
 
-class MAINMODULE_EXPORT FileBrowser : public QTreeView
+class  FileBrowser : public QTreeView
 {
     Q_OBJECT
 

@@ -24,7 +24,7 @@
 #include "logiccomponent.h"
 #include "e-fulladder.h"
 
-class MAINMODULE_EXPORT FullAdder : public LogicComponent, public eFullAdder
+class  FullAdder : public LogicComponent, public eFullAdder
 {
     Q_OBJECT
     Q_PROPERTY( double Input_High_V READ inputHighV WRITE setInputHighV DESIGNABLE true USER true )

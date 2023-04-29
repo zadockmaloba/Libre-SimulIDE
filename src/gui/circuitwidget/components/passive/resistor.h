@@ -25,7 +25,7 @@
 #include "pin.h"
 
 
-class MAINMODULE_EXPORT Resistor : public Component, public eResistor
+class  Resistor : public Component, public eResistor
 {
     Q_OBJECT
     Q_PROPERTY( double Resistance READ resist   WRITE setResist  DESIGNABLE true USER true )

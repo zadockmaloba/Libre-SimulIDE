@@ -22,7 +22,7 @@
 
 #include "e-element.h"
 
-class MAINMODULE_EXPORT eResistor : public eElement
+class  eResistor : public eElement
 {
     public:
         eResistor( std::string id );

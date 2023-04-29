@@ -28,7 +28,7 @@ class CircuitWidget;
 class EditorWindow;
 class FileWidget;
 
-class MAINMODULE_EXPORT MainWindow : public QMainWindow
+class  MainWindow : public QMainWindow
 {
     Q_OBJECT
 

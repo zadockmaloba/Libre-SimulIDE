@@ -26,7 +26,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT Ground : public Component
+class  Ground : public Component
 {
     Q_OBJECT
     public:

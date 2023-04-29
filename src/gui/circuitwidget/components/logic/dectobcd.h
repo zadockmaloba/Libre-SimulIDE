@@ -24,7 +24,7 @@
 #include "itemlibrary.h"
 #include "logiccomponent.h"
 
-class MAINMODULE_EXPORT DecToBcd : public LogicComponent, public eDecToBcd
+class  DecToBcd : public LogicComponent, public eDecToBcd
 {
     Q_OBJECT
     Q_PROPERTY( double Input_High_V READ inputHighV WRITE setInputHighV DESIGNABLE true USER true )

@@ -25,7 +25,7 @@
 #include "logiccomponent.h"
 #include "memdata.h"
 
-class MAINMODULE_EXPORT I2CRam : public LogicComponent, public eI2C, public MemData
+class  I2CRam : public LogicComponent, public eI2C, public MemData
 {
     Q_OBJECT
     Q_PROPERTY( QVector<int> Mem  READ mem        WRITE setMem )

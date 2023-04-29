@@ -31,7 +31,7 @@
 #define CHigh   2
 #define Falling 3
 
-class MAINMODULE_EXPORT eLogicDevice : public eElement
+class  eLogicDevice : public eElement
 {
     public:
 

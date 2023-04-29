@@ -25,7 +25,7 @@
 #include "e-bcdto7s.h"
 
 
-class MAINMODULE_EXPORT SevenSegmentBCD : public LogicComponent, public eBcdTo7S
+class  SevenSegmentBCD : public LogicComponent, public eBcdTo7S
 {
     Q_OBJECT
 

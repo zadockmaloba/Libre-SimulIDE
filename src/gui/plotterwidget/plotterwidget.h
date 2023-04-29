@@ -24,7 +24,7 @@
 
 class RenderArea;
 
-class MAINMODULE_EXPORT PlotterWidget : public QWidget
+class  PlotterWidget : public QWidget
 {
     Q_OBJECT
     

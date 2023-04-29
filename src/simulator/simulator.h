@@ -31,7 +31,7 @@ class BaseProcessor;
 class eElement;
 class eNode;
 
-class MAINMODULE_EXPORT Simulator : public QObject
+class  Simulator : public QObject
 {
     Q_OBJECT
   public:

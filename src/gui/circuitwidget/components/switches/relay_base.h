@@ -24,7 +24,7 @@
 #include "mech_contact.h"
 
 
-class MAINMODULE_EXPORT RelayBase : public MechContact
+class  RelayBase : public MechContact
 {
     Q_OBJECT
     Q_PROPERTY( bool DT         READ dt       WRITE setDt    DESIGNABLE true USER true )

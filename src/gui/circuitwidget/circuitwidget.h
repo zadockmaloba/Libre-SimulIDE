@@ -26,7 +26,7 @@
 #include "plotterwidget.h"
 #include "terminalwidget.h"
 
-class MAINMODULE_EXPORT CircuitWidget : public QWidget
+class  CircuitWidget : public QWidget
 {
     Q_OBJECT
 

@@ -27,7 +27,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT XorGate : public Gate
+class  XorGate : public Gate
 {
     Q_OBJECT
     

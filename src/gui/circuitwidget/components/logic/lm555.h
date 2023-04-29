@@ -29,7 +29,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT Lm555 : public Component, public eLm555
+class  Lm555 : public Component, public eLm555
 {
     Q_OBJECT
 

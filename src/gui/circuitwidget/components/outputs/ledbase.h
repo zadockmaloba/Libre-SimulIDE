@@ -26,7 +26,7 @@
 #include <QWidget>
 #include <QColor>
 
-class MAINMODULE_EXPORT LedBase : public Component, public eLed
+class  LedBase : public Component, public eLed
 {
     Q_OBJECT
     Q_PROPERTY( LedColor Color    READ color      WRITE setColor      DESIGNABLE true USER true )

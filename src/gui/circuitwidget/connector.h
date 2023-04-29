@@ -25,7 +25,7 @@
 class ConnectorLine;
 class eNode;
 
-class MAINMODULE_EXPORT Connector : public Component
+class  Connector : public Component
 {
     Q_OBJECT
     Q_PROPERTY( QStringList pointList  READ pointList  WRITE setPointList )

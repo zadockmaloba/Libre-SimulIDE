@@ -25,7 +25,7 @@
 class ePin;
 class eResistor;
 
-class MAINMODULE_EXPORT eMuxAnalog : public eElement
+class  eMuxAnalog : public eElement
 {
     public:
 

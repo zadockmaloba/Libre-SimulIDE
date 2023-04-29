@@ -24,7 +24,7 @@
 
 class eSource;
 
-class MAINMODULE_EXPORT eLm555 : public eElement
+class  eLm555 : public eElement
 {
     public:
 

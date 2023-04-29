@@ -23,7 +23,7 @@
 #include "chip.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT SubCircuit : public Chip
+class  SubCircuit : public Chip
 {
     Q_OBJECT
 

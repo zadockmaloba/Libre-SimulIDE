@@ -24,7 +24,7 @@
 #include "component.h"
 
 
-class MAINMODULE_EXPORT CapacitorBase : public Component, public eCapacitor
+class  CapacitorBase : public Component, public eCapacitor
 {
     Q_OBJECT
     Q_PROPERTY( double Capacitance   READ capac    WRITE setCapac   DESIGNABLE true USER true )

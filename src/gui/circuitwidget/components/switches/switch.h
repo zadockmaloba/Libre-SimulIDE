@@ -24,7 +24,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT Switch : public SwitchBase
+class  Switch : public SwitchBase
 {
     Q_OBJECT
     Q_PROPERTY( bool DT     READ dt  WRITE setDt  DESIGNABLE true USER true )

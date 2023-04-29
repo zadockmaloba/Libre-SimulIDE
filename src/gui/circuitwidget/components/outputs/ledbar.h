@@ -24,7 +24,7 @@
 #include "component.h"
 #include "ledsmd.h"
 
-class MAINMODULE_EXPORT LedBar : public Component
+class  LedBar : public Component
 {
     Q_OBJECT
     Q_PROPERTY( LedBase::LedColor Color READ color WRITE setColor     DESIGNABLE true USER true )

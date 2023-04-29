@@ -25,7 +25,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT Function : public LogicComponent, public eFunction
+class  Function : public LogicComponent, public eFunction
 {
     Q_OBJECT
     Q_PROPERTY( double Input_High_V READ inputHighV WRITE setInputHighV DESIGNABLE true USER true )

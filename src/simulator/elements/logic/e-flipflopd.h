@@ -22,7 +22,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eFlipFlopD : public eLogicDevice
+class  eFlipFlopD : public eLogicDevice
 {
     public:
 

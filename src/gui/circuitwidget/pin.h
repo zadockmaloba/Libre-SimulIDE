@@ -24,7 +24,7 @@
 #include "connector.h"
 #include "e-pin.h"
 
-class MAINMODULE_EXPORT Pin : public QObject, public QGraphicsItem, public ePin
+class  Pin : public QObject, public QGraphicsItem, public ePin
 {
     Q_OBJECT
     Q_INTERFACES(QGraphicsItem)

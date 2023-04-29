@@ -24,7 +24,7 @@
 #include "logiccomponent.h"
 #include "e-dac.h"
 
-class MAINMODULE_EXPORT DAC : public LogicComponent, public eDAC
+class  DAC : public LogicComponent, public eDAC
 {
     Q_OBJECT
     Q_PROPERTY( double Input_High_V READ inputHighV WRITE setInputHighV DESIGNABLE true USER true )

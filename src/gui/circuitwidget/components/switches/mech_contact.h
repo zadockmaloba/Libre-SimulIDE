@@ -23,7 +23,7 @@
 #include "component.h"
 #include "e-resistor.h"
 
-class MAINMODULE_EXPORT MechContact : public Component, public eElement
+class  MechContact : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( bool Norm_Close READ nClose WRITE setNClose  DESIGNABLE true USER true )

@@ -26,7 +26,7 @@
 
 class SerialTerm;
 
-class MAINMODULE_EXPORT TerminalWidget : public QWidget
+class  TerminalWidget : public QWidget
 {
     Q_OBJECT
 

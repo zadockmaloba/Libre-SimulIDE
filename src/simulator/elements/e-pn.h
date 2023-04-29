@@ -22,7 +22,7 @@
 
 #include "e-resistor.h"
 
-class MAINMODULE_EXPORT ePN : public eResistor
+class  ePN : public eResistor
 {
     public:
         ePN(  std::string id );

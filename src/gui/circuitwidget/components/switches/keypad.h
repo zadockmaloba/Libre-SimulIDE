@@ -25,7 +25,7 @@
 #include "push_base.h"
 
 
-class MAINMODULE_EXPORT KeyPad : public Component, public eElement
+class  KeyPad : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( int      Rows       READ rows WRITE setRows  DESIGNABLE true USER true )

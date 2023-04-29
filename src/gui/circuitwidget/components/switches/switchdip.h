@@ -25,7 +25,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT SwitchDip : public Component, public eElement
+class  SwitchDip : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( int    Size   READ size   WRITE setSize   DESIGNABLE true USER true )

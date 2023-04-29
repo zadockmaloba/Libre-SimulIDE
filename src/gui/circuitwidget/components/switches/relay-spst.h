@@ -24,7 +24,7 @@
 #include "e-resistor.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT RelaySPST : public RelayBase
+class  RelaySPST : public RelayBase
 {
     Q_OBJECT
     

@@ -28,7 +28,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT Oscope : public Component, public eElement
+class  Oscope : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( double Filter READ filter  WRITE setFilter DESIGNABLE true USER true )

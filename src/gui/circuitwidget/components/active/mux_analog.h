@@ -26,7 +26,7 @@
 
 class eResistor;
 
-class MAINMODULE_EXPORT MuxAnalog : public Component, public eMuxAnalog
+class  MuxAnalog : public Component, public eMuxAnalog
 {
     Q_OBJECT
     Q_PROPERTY( int    Address_Bits READ addrBits WRITE setAddrBits DESIGNABLE true USER true )

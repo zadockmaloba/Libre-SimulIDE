@@ -23,7 +23,7 @@
 #include "e-diode.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT Diode : public Component, public eDiode
+class  Diode : public Component, public eDiode
 {
     Q_OBJECT
     Q_PROPERTY( double Threshold  READ threshold WRITE setThreshold DESIGNABLE true USER true )

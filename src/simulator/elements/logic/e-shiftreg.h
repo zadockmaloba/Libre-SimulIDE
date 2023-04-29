@@ -24,7 +24,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eShiftReg : public eLogicDevice
+class  eShiftReg : public eLogicDevice
 {
     public:
         eShiftReg( std::string id, int latchClk=0, int serOut=0 );

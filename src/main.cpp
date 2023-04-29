@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
     window.scroll( 0, 50 );
 
     window.show();
-    app.setApplicationVersion( APP_VERSION );
+    app.setApplicationVersion( "0.1.0.a"/*APP_VERSION*/ );
     return app.exec();
 }
 

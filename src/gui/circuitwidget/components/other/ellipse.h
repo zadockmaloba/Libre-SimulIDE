@@ -23,7 +23,7 @@
 #include "itemlibrary.h"
 #include "shape.h"
 
-class MAINMODULE_EXPORT Ellipse : public Shape
+class  Ellipse : public Shape
 {
     Q_OBJECT
     

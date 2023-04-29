@@ -25,7 +25,7 @@
 #include "pin.h"
 
 
-class MAINMODULE_EXPORT McuComponentPin : public QObject, public eSource
+class  McuComponentPin : public QObject, public eSource
 {
     Q_OBJECT
     public:

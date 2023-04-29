@@ -23,7 +23,7 @@
 #include "e-logic_device.h"
 
 
-class MAINMODULE_EXPORT eBinCounter : public eLogicDevice
+class  eBinCounter : public eLogicDevice
 {
     public:
 

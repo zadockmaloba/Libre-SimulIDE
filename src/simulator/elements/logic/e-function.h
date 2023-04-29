@@ -24,7 +24,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eFunction : public eLogicDevice
+class  eFunction : public eLogicDevice
 {
     public:
 

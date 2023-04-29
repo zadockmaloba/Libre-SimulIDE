@@ -31,7 +31,7 @@ Q_DECLARE_METATYPE( QList<int> )
 class Pin;
 class Label;
 
-class MAINMODULE_EXPORT Component : public QObject, public QGraphicsItem
+class  Component : public QObject, public QGraphicsItem
 {
     Q_OBJECT
     Q_INTERFACES(QGraphicsItem)

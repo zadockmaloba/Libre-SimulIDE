@@ -292,7 +292,7 @@ void CircuitWidget::about()
     QString t ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;";
     QMessageBox::about( this, tr("About SimulIDE"),
                         "<br><br>"
-    "<b>Version:</b>&nbsp; &nbsp; &nbsp;"+QString( APP_VERSION )+"<br><b>Compiled:</b> "+date+"<br><br><br>"
+    "<b>Version:</b>&nbsp; &nbsp; &nbsp;"+QString( /*APP_VERSION*/ )+"<br><b>Compiled:</b> "+date+"<br><br><br>"
     "<b>Web site:</b> <a href=\"https://simulide.blogspot.com/\"> https://simulide.blogspot.com/ </a><br><br>"
     "<b>Become a Patron:</b> <a href=\"https://www.patreon.com/simulide\"> https://www.patreon.com/simulide </a><br><br>"
     "<br><br>"

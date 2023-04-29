@@ -22,7 +22,7 @@
 
 #include "e-element.h"
 
-class MAINMODULE_EXPORT eBus : public eElement
+class  eBus : public eElement
 {
     public:
 

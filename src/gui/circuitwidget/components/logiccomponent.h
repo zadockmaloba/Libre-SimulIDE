@@ -23,7 +23,7 @@
 #include "component.h"
 #include "pin.h"
 
-class MAINMODULE_EXPORT LogicComponent : public Component
+class  LogicComponent : public Component
 {
     Q_OBJECT
     public:

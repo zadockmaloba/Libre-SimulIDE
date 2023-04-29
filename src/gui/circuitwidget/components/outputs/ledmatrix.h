@@ -25,7 +25,7 @@
 #include "e-element.h"
 #include "ledsmd.h"
 
-class MAINMODULE_EXPORT LedMatrix : public Component, public eElement
+class  LedMatrix : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( LedBase::LedColor Color READ color WRITE setColor     DESIGNABLE true USER true )

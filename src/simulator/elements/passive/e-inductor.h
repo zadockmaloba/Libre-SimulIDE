@@ -24,7 +24,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT eInductor : public eResistor
+class  eInductor : public eResistor
 {
     public:
         eInductor( std::string id );

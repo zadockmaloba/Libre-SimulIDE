@@ -22,7 +22,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eDAC : public eLogicDevice
+class  eDAC : public eLogicDevice
 {
     public:
         eDAC( std::string id  );

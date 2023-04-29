@@ -21,7 +21,7 @@
 #define MEMDATA_H
 
 
-class MAINMODULE_EXPORT MemData
+class  MemData
 {
     public:
         MemData();

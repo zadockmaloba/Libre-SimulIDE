@@ -23,7 +23,7 @@
 #include "itemlibrary.h"
 #include "shape.h"
 
-class MAINMODULE_EXPORT Image : public Shape
+class  Image : public Shape
 {
     Q_OBJECT
     Q_PROPERTY( QString Image_File READ background WRITE setBackground DESIGNABLE true USER true )

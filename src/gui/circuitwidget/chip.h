@@ -24,7 +24,7 @@
 #include "e-element.h"
 
 
-class MAINMODULE_EXPORT Chip : public Component, public eElement
+class  Chip : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( bool Logic_Symbol READ logicSymbol WRITE setLogicSymbol DESIGNABLE true USER true )

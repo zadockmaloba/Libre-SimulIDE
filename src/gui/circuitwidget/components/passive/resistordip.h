@@ -25,7 +25,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT ResistorDip : public Component, public eResistorDip
+class  ResistorDip : public Component, public eResistorDip
 {
     Q_OBJECT
     Q_PROPERTY( int    Size       READ size     WRITE setSize    DESIGNABLE true USER true )

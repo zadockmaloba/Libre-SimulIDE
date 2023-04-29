@@ -22,7 +22,7 @@
 
 #include "component.h"
 
-class MAINMODULE_EXPORT Shape : public Component
+class  Shape : public Component
 {
     Q_OBJECT
     Q_PROPERTY( int    H_size  READ hSize   WRITE setHSize   DESIGNABLE true USER true )

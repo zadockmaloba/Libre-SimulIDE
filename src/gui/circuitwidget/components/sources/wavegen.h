@@ -24,7 +24,7 @@
 #include "itemlibrary.h"
 #include <QObject>
 
-class MAINMODULE_EXPORT WaveGen : public ClockBase
+class  WaveGen : public ClockBase
 {
     Q_OBJECT
     Q_PROPERTY( double    Volt_Base   READ voltBase    WRITE setVoltBase DESIGNABLE true USER true )

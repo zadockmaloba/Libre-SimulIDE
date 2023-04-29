@@ -24,7 +24,7 @@
 #include "logiccomponent.h"
 #include "e-bincounter.h"
 
-class MAINMODULE_EXPORT BinCounter : public LogicComponent, public eBinCounter
+class  BinCounter : public LogicComponent, public eBinCounter
 {
     Q_OBJECT
     Q_PROPERTY( double Input_High_V READ inputHighV WRITE setInputHighV DESIGNABLE true USER true )

@@ -35,7 +35,7 @@
 // #define GNU_CONST_STATIC_FLOAT_DECLARATION const
 //#endif
 
-class MAINMODULE_EXPORT eElement
+class  eElement
 {
   public:
     eElement(std::string id = 0);

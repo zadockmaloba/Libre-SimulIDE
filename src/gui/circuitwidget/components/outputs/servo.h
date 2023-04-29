@@ -25,7 +25,7 @@
 #include "logiccomponent.h"
 
 
-class MAINMODULE_EXPORT Servo : public LogicComponent, public eLogicDevice
+class  Servo : public LogicComponent, public eLogicDevice
 {
     Q_OBJECT
     Q_PROPERTY( double Speed   READ speed    WRITE setSpeed    DESIGNABLE true USER true )

@@ -34,7 +34,7 @@
 #include "component.h"
 
 
-class MAINMODULE_EXPORT eI2C : public eLogicDevice
+class  eI2C : public eLogicDevice
 {
     public:
 

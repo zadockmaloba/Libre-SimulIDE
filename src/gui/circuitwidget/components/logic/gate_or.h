@@ -27,7 +27,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT OrGate : public Gate
+class  OrGate : public Gate
 {
     Q_OBJECT
     Q_PROPERTY( int    Num_Inputs   READ numInps    WRITE setNumInps    DESIGNABLE true USER true )

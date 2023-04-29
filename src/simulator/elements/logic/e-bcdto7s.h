@@ -22,7 +22,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eBcdTo7S : public eLogicDevice
+class  eBcdTo7S : public eLogicDevice
 {
     public:
 

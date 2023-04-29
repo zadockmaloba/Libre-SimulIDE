@@ -27,7 +27,7 @@
 
 class RamTable;
 
-class MAINMODULE_EXPORT BaseProcessor : public QObject
+class  BaseProcessor : public QObject
 {
     Q_OBJECT
     public:

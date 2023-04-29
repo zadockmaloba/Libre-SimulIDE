@@ -26,7 +26,7 @@
 #include "memdata.h"
 
 
-class MAINMODULE_EXPORT Memory : public LogicComponent, public eMemory, public MemData
+class  Memory : public LogicComponent, public eMemory, public MemData
 {
     Q_OBJECT
 

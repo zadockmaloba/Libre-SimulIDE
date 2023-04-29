@@ -28,7 +28,7 @@
 #include "pin.h"
 
 
-class MAINMODULE_EXPORT Circuit : public QGraphicsScene
+class  Circuit : public QGraphicsScene
 {
     Q_OBJECT
     

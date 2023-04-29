@@ -29,7 +29,7 @@
 #define VERT_ADDR_MODE 1
 #define PAGE_ADDR_MODE 2
 
-class MAINMODULE_EXPORT Ssd1306 : public Component, public eI2C
+class  Ssd1306 : public Component, public eI2C
 {
     Q_OBJECT
     //Q_PROPERTY( bool CS_Active_Low   READ csActLow    WRITE setCsActLow   DESIGNABLE true USER true )

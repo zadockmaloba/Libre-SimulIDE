@@ -23,7 +23,7 @@
 #include "logicinput.h"
 #include <QObject>
 
-class MAINMODULE_EXPORT ClockBase : public LogicInput
+class  ClockBase : public LogicInput
 {
     Q_OBJECT
     Q_PROPERTY( double Freq    READ freq    WRITE setFreq   DESIGNABLE true USER true )

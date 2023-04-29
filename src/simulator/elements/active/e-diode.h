@@ -22,7 +22,7 @@
 
 #include "e-resistor.h"
 
-class MAINMODULE_EXPORT eDiode : public eResistor
+class  eDiode : public eResistor
 {
     public:
         eDiode(  std::string id );

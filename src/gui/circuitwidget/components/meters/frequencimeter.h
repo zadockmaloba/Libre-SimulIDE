@@ -24,7 +24,7 @@
 #include "component.h"
 #include "e-element.h"
 
-class MAINMODULE_EXPORT Frequencimeter : public Component, public eElement
+class  Frequencimeter : public Component, public eElement
 {
     Q_OBJECT
 

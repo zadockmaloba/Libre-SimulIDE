@@ -32,7 +32,7 @@
 #include <QDialog>
 #include <QGridLayout>
 #include <QHeaderView>
-#include <findreplaceform.h>
+#include "findreplaceform.h"
 
 QT_BEGIN_NAMESPACE
 

@@ -28,7 +28,7 @@
 class LibraryItem;
 //class DialWidget;
 
-class MAINMODULE_EXPORT CurrSource : public Component, public eElement
+class  CurrSource : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( double  Current   READ current WRITE setCurrent DESIGNABLE true USER true )

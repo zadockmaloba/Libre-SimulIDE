@@ -31,7 +31,7 @@
 class BaseProcessor;
 class McuComponentPin;
 
-class MAINMODULE_EXPORT McuComponent : public Chip, public MemData
+class  McuComponent : public Chip, public MemData
 {
     Q_OBJECT
     Q_PROPERTY( QVector<int> eeprom  READ eeprom   WRITE setEeprom )

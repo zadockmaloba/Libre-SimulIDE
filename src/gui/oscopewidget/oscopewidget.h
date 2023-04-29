@@ -28,7 +28,7 @@
 
 class Oscope;
 
-class MAINMODULE_EXPORT OscopeWidget : public QWidget, public eElement
+class  OscopeWidget : public QWidget, public eElement
 {
     Q_OBJECT
 

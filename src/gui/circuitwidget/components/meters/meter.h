@@ -26,7 +26,7 @@
 class eSource;
 class Pin;
 
-class MAINMODULE_EXPORT Meter : public Component, public eResistor
+class  Meter : public Component, public eResistor
 {
     Q_OBJECT
 

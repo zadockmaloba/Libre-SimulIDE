@@ -23,7 +23,7 @@
 #include "e-logic_device.h"
 
 
-class MAINMODULE_EXPORT eFullAdder : public eLogicDevice
+class  eFullAdder : public eLogicDevice
 {
     public:
 

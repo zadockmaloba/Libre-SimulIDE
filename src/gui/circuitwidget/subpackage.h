@@ -24,7 +24,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT SubPackage : public Chip
+class  SubPackage : public Chip
 {
     Q_OBJECT
     Q_PROPERTY( QString  Package_File   READ package  WRITE setPackage  DESIGNABLE true  USER true )

@@ -22,7 +22,7 @@
 
 #include <qdir.h>
 
-class MAINMODULE_EXPORT SIMUAPI_AppPath
+class  SIMUAPI_AppPath
 {
     public:
         static SIMUAPI_AppPath* self();

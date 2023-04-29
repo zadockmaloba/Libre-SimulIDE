@@ -22,7 +22,7 @@
 
 #include "e-diode.h"
 
-class MAINMODULE_EXPORT eLed : public eDiode
+class  eLed : public eDiode
 {
     public:
         eLed( std::string id );

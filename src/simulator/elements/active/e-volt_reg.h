@@ -23,7 +23,7 @@
 #include "e-resistor.h"
 #include "e-source.h"
 
-class MAINMODULE_EXPORT eVoltReg : public eResistor
+class  eVoltReg : public eResistor
 {
     public:
 

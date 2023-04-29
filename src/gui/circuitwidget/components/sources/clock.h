@@ -24,7 +24,7 @@
 #include "itemlibrary.h"
 #include <QObject>
 
-class MAINMODULE_EXPORT Clock : public ClockBase
+class  Clock : public ClockBase
 {
     Q_OBJECT
     

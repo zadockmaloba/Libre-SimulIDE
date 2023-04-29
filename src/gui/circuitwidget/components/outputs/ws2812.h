@@ -24,7 +24,7 @@
 #include "component.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT WS2812 : public Component, public eLogicDevice
+class  WS2812 : public Component, public eLogicDevice
 {
     Q_OBJECT
     Q_PROPERTY( int Rows READ rows WRITE setRows DESIGNABLE true USER true )

@@ -23,7 +23,7 @@
 #include "capacitorbase.h"
 #include "itemlibrary.h"
 
-class MAINMODULE_EXPORT elCapacitor : public CapacitorBase
+class  elCapacitor : public CapacitorBase
 {
     Q_OBJECT
     

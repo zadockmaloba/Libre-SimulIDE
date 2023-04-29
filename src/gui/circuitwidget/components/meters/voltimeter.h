@@ -24,7 +24,7 @@
 #include "meter.h"
 
 
-class MAINMODULE_EXPORT Voltimeter : public Meter
+class  Voltimeter : public Meter
 {
     Q_OBJECT
 

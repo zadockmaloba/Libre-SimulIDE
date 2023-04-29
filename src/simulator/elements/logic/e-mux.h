@@ -22,7 +22,7 @@
 
 #include "e-logic_device.h"
 
-class MAINMODULE_EXPORT eMux : public eLogicDevice
+class  eMux : public eLogicDevice
 {
     public:
 

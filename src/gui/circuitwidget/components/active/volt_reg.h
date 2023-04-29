@@ -26,7 +26,7 @@
 #include <QObject>
 
 
-class MAINMODULE_EXPORT VoltReg : public Component, public eVoltReg
+class  VoltReg : public Component, public eVoltReg
 {
     Q_OBJECT
     Q_PROPERTY( double Volts READ vRef  WRITE setVRef DESIGNABLE true USER true )

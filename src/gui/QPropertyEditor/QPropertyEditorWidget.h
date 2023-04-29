@@ -60,7 +60,7 @@ class Property;
 
 
 
-class MAINMODULE_EXPORT QPropertyEditorWidget : public QTreeView
+class  QPropertyEditorWidget : public QTreeView
 {
 	Q_OBJECT
 public:

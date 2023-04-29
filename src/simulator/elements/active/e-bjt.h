@@ -23,7 +23,7 @@
 #include "e-pn.h"
 #include "e-diode.h"
 
-class MAINMODULE_EXPORT eBJT : public eResistor
+class  eBJT : public eResistor
 {
     public:
 

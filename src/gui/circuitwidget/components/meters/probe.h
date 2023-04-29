@@ -28,7 +28,7 @@ class eSource;
 class Connector;
 class LibraryItem;
 
-class MAINMODULE_EXPORT Probe : public Component, public eElement
+class  Probe : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( bool   Show_volt READ showVal  WRITE setShowVal  DESIGNABLE true USER true )

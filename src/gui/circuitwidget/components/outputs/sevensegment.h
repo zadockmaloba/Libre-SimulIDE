@@ -26,7 +26,7 @@
 
 class LibraryItem;
 
-class MAINMODULE_EXPORT SevenSegment : public Component, public eElement
+class  SevenSegment : public Component, public eElement
 {
     Q_OBJECT
     Q_PROPERTY( LedBase::LedColor Color READ color      WRITE setColor         DESIGNABLE true USER true )

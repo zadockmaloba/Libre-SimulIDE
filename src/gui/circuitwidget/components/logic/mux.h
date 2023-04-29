@@ -24,7 +24,7 @@
 #include "itemlibrary.h"
 #include "logiccomponent.h"
 
-class MAINMODULE_EXPORT Mux : public LogicComponent, public eMux
+class  Mux : public LogicComponent, public eMux
 {
     Q_OBJECT
     Q_PROPERTY( bool   tristate     READ tristate   USER true )
